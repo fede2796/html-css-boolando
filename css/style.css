@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /*COMMON*/
+ header{
+  background-color: orange;
+  height: 100px;
+  padding-top: 30px;
+ }
+.container{
+    background-color: pink;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+    height: 40px;
+}
+img{
+    width: 100%;
+}
+.nav,
+.logo,
+.icon{
+    border: 1px solid black;
+    width: calc(100%/3);
+    height: 100%;
+}
+.logo img{
+    width: 30%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+}
+li{
+    padding: 0 5px;
+    
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.icon{
+    text-align: right;
+    color: white;
+}
+section .container{
+    margin-top: 30px;
+    
+}
+
+.left,
+.right,
+.center{
+    border: 1px solid black;
+    width: calc(100%/3);
+    height: 100%;
+}
