@@ -6,11 +6,15 @@
  /*COMMON*/
  header{
   background-color: orange;
-  height: 100px;
-  padding-top: 30px;
+  height: 80px;
+  width: 100%;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
  }
 .container{
-    background-color: pink;
+    background-color: transparent;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -24,7 +28,7 @@ img{
 .nav,
 .logo,
 .icon{
-    border: 1px solid black;
+    ;
     width: calc(100%/3);
     height: 100%;
 }
@@ -32,7 +36,7 @@ img{
     width: 30%;
     display: block;
     margin: auto;
-    vertical-align: middle;
+    
 }
 li{
     padding: 0 5px;
@@ -51,8 +55,10 @@ a{
     text-align: right;
     color: white;
 }
+
 section .container{
-    margin-top: 30px;
+    margin-top: 100px;
+    height: 630px;
     
 }
 
@@ -62,4 +68,30 @@ section .container{
     border: 1px solid black;
     width: calc(100%/3);
     height: 100%;
+    margin-right: 10px;
+    
+}
+
+
+.discount{
+    
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    
+}
+.discount.red{
+    background-color: red;
+}
+.discount.green{
+    background-color: green;
+}
+
+.second{
+    position: absolute;
+    display: none;
+}
+.contimg:hover .second{
+    display: inline-block;
 }
