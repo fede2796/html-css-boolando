@@ -28,7 +28,7 @@ img{
 .nav,
 .logo,
 .icon{
-    ;
+    
     width: calc(100%/3);
     height: 100%;
 }
@@ -73,25 +73,24 @@ section .container{
 }
 
 
-.discount{
-    
-    color: white;
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    
-}
-.discount.red{
-    background-color: red;
-}
-.discount.green{
-    background-color: green;
-}
-
-.second{
-    position: absolute;
-    display: none;
-}
-.contimg:hover .second{
+.boximage{
+   
+    width: 100%;
     display: inline-block;
+}
+.boximage img {
+    transition: all linear 0.5s;
+    position: relative;
+}
+.hover-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.boximage:hover img{
+    opacity:0;
+}
+.boximage:hover img.hover-img{
+    opacity: 1;
 }
