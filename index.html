@@ -1,108 +1,178 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Boolando</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="nav">
-                   <ul class="menu">
-                       <li>
-                        <a href="#">Donna</a>
-                       </li>
-                       <li>
-                        <a href="#">Uomo</a>
-                       </li>
-                       <li>
-                        <a href="#">Bambini</a>
-                       </li>
-                   </ul>
-
+            <div class="flex-header">
+                <!-- Nav -->
+                <nav>
+                    <ul class="list-category">
+                        <li><a href="#">Donna</a></li>
+                        <li><a href="#">Uomo</a></li>
+                        <li><a href="#">Bambini</a></li>
+                    </ul>
+                </nav>
+                <!-- Logo sito -->
+                <div class="col-logo">
+                    <img class="logo" src="img/boolean-logo.png" alt="Logo Boolean">
+                </div>
+                <!-- Icone carrello e preferiti -->
+                <div>
+                    <ul class="list-cart">
+                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        
+                    </ul>
+                </div>
             </div>
-            <div class="logo">
-                   <img src="img/boolean-logo.png" alt=""> 
-            </div>
-            <div class="icon">
-                    icone
-            </div>
-            
         </div>
+        
+
     </header>
-    
+    <!-- Main -->
     <main>
-        <section>
-            <div class="container">
-                <div class="left">
-                    
-                     <div class="boximage">
-                            <img src="img/1.webp" alt="prima immagine">
-                            <img  class="secondimg" src="img//1b.webp"  alt="seconda immagine">
-                    </div>
-                        
-                        
-                    <div class="sold">
-                            -50%
-                    </div>
-                    <div class="sold2">
-                            Sostenibilità
-                    </div>
-                        
-                      
-                    
-                </div>
-                <div class="center">
-                    <img src="img/2.webp" alt="prima ragazza">
-                    <div class="price">
-                        contenuto prezzo
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="img/3.webp" alt="seconda ragazza">
-                    <div class="price">
-                        contenuto prezzo
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="left">
-                    <div class="content">
-                        <img src="img/1.webp" alt="primo ragazzo">
-                        
-                        <div class="discount green">-50%</div>
-                        <div class="price">
-                            
+        <div class="container">
+            <div class="columns">
+                <!-- Schede prodotti -->
+                <!-- Scheda 1     -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/1.webp" alt="T-shit Levi's 1">
+                        <img class="hover-img" src="img/1b.webp" alt="T-shit Levi's 2">
+                        <!-- product-tags -->
+                        <div class="product-tags">
+                            <span class="tag red">-50%</span>
+                            <span class="tag green">Sostenibilità</span>
                         </div>
+                        <span class="product-heart">&hearts;</span>
                     </div>
+                    <!-- Info prodotto -->
+                    <span>Levi's</span>
+                    <span><h3>Relaxed Fit Tee Unisex</h3></span>
+                    <div><span class="actual-price">14,99 &euro;</span> <span class="original-price">29,99 &euro;</span></div>
                 </div>
-                <div class="center">
-                    <img src="img/2.webp" alt="prima ragazza">
-                    <div class="price">
-                        contenuto prezzo
+                <!-- Scheda 2 -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/2.webp" alt="T-shirt Guess 1">
+                        <img class="hover-img"  src="img/2b.webp" alt="T-shirt Guess 2">
+                        <!-- product-tags -->
+                        <div class="product-tags">
+                            <span class="tag red">-30%</span>
+                        </div>
+                        <span class="product-heart">&hearts;</span>
                     </div>
+                    <!-- Info prodotto -->
+                    <span>Guess</span>
+                    <span><h3>Roses Tee</h3></span>
+                    <div><span class="actual-price">20,99 &euro;</span> <span class="original-price">29,99 &euro;</span></div>
                 </div>
-                <div class="right">
-                    <img src="img/3.webp" alt="seconda ragazza">
-                    <div class="price">
-                        contenuto prezzo
+                <!-- Scheda 3 -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/3.webp" alt="Completo Zucchero 1">
+                        <img class="hover-img"  src="img/3b.webp" alt="Completo Zucchero 2">
+                        <!-- Product tags -->
+                        <div class="product-tags">
+                            <span class="tag red">-30%</span>
+                        </div>
+                        <span class="product-heart">&hearts;</span>
                     </div>
+                    <!-- Info prodotto -->
+                    <span>Come Zucchero Filato</span>
+                    <span><h3>Voglia di colori pastello</h3></span>
+                    <div><span class="actual-price">129,99 &euro;</span> <span class="original-price">184,99 &euro;</span></div>
                 </div>
-
+                <!-- Scheda 4 -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/4.webp" alt="T-shirt Levi's 1">
+                        <img class="hover-img"  src="img/4b.webp" alt="T-shirt Levi's 2">
+                        <!-- Product tags -->
+                        <div class="product-tags">
+                            <span class="tag red">-50%</span>
+                            <span class="tag green">Sostenibilità</span>
+                        </div>
+                        <span class="product-heart">&hearts;</span>
+                    </div>
+                    <!-- Info prodotto -->
+                    <span>Levi's</span>
+                    <span><h3>Tee Unisex</h3></span>
+                    <div><span class="actual-price">14,99 &euro;</span> <span class="original-price">29,99 &euro;</span></div>
+                </div>
+                <!-- Scheda 5 -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/5.webp" alt="Gonna Maya 1">
+                        <img class="hover-img"  src="img/5b.webp" alt="Gonna Maya 2">
+                        <!-- Product tags -->
+                        <span class="product-heart">&hearts;</span>
+                    </div>
+                    <!-- Info prodotto -->
+                    <span>Maya Deluxe</span>
+                    <span><h3>Stripe Bodice</h3></span>
+                    <div><span class="actual-price">99,99 &euro;</span></div>
+                </div>
+                <!-- Scheda 6 -->
+                <div class="col">
+                    <div class="prod-pic">
+                        <img src="img/6.webp" alt="Maglione Esprit 1">
+                        <img class="hover-img"  src="img/6b.webp" alt="Maglione Esprit 2">
+                        <!-- Product tags -->
+                        <div class="product-tags">
+                            <span class="tag green">Sostenibilità</span>
+                        </div>
+                        <span class="product-heart">&hearts;</span>
+                    </div> 
+                    <!-- Info prodotto -->
+                    <span>Esprit</span>
+                    <span><h3>Maglione - Black</h3></span>
+                    <div><span class="actual-price">29,99 &euro;</span></div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
-
+    <!-- Footer -->
     <footer>
+        <div class="container">
+            <div class="flex-footer">
+                <!-- Nome azienda ed info legali -->
+                <div>
+                    <h3>Boolando s.r.l.</h3>
+                    <ul>
+                        <li><a href="#">Informazioni legali</a></li>
+                        <li><a href="#">Informativa sulla privacy</a></li>
+                        <li><a href="#">Diritti di recesso</a></li>
+                    </ul>
+                </div>
+                <!-- Lista social -->
+                <div>
+                    <h4>Trovaci anche su</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </footer>
+    
 </body>
 </html>
