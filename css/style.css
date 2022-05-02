@@ -72,25 +72,38 @@ section .container{
     
 }
 
-
-.boximage{
-   
-    width: 100%;
-    display: inline-block;
-}
-.boximage img {
-    transition: all linear 0.5s;
+.left{
     position: relative;
 }
-.hover-img img{
+.boximage{
+    position: relative;
+    width: 100%;
+    
+}
+.sold{
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    float: left;
+}
+.sold2{
+    background-color:red;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    float: right;
+    
+}
+.secondimg{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
+    z-index: 1;
 }
-.boximage:hover img{
-    opacity:0;
-}
-.boximage:hover img.hover-img{
-    opacity: 1;
+.boximage:hover .secondimg {
+    display: inline-block;
 }
